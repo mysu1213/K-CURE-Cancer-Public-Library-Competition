@@ -25,7 +25,39 @@
 <br/>
 
 ### 4. 내용
+![image](https://github.com/mysu1213/K-CURE-Cancer-Public-Library-Competition/assets/138764934/6c4c17fc-8118-4691-8814-ebfae7fe8566)
+**[그림 1] K-CURE 암 공공 라이브러리 활용한 데이터 분석 목표**
+
+<br/>
+
+![image](https://github.com/mysu1213/K-CURE-Cancer-Public-Library-Competition/assets/138764934/515217d5-6ef2-485e-9068-b02a232d46be)
+**[그림 2] 프로젝트 목표: 암 재발 위험도/시기/건강행동/원발부위 분석**
+
+<br/>
+
+ &nbsp; K-CURE 암 DB에서 선행연구를 기반하여 암의 재발관련 위험요인 (1) 인구사회학적특성(성별, 연령, 키, 지역, 소등, 가구원 수 등), (2) 임상수치(CBC, 암의 진행정도, 종양크기, 분화도 등), (3) 건강검진문항(음주, 흡연, 비만, 가족력 등), (4) 유전학적 요인을 고려하여 약 400개의 변수를 선정하였다. 또한, 암 재발 환자 탐색 방법으로 한국표준질병사인분류에 근거하여 주상병/부상병 코드가 'U99'를 가진 환자를 선택하였다. 파생변수로 재발시기, 건강행동(음주, 신체활동량), 수술총횟수, 병원이 소재한 도시크기를 생성하였다. 
+ <br/>
+ &nbsp; 데이터 전처리 과정으로 평균, 중앙값, 최빈값 등의 방법 대비 높은 정확성을 가지고 있는 KNN imputer 방법으로 결측값을 처리하였고, 클래스 불균형 문제를 해결하고자 SMOTE(Synthetic Minority Oversampling Technique)방법을 사용하여 재발 환자 클래스를 Oversampling을 하였다.
+ <br/>
+ &nbsp; 모델링은 Tensorflow 딥러닝 프레임워크를 활용하여 DNN과 SHAP(Shapley additive explanation)을 결합하여 개별 예측에 대해 Feature의 모델 결과 기여도를 상호관계를 고려하여 측정하는 모델을 개발하였다. 성능결과를 기존의 머신러닝 방법들과 비교하기 위해 KNN
+
+ <br/>
+
 ### 5. 프로젝트 담당 역할
+- 팀장 (팀원 구성, 발표, 연구 계획서 작성, 데이터 분석)
+- 데이터 전처리, 파생변수 생성, 이상치 및 결측치 처리
+- 지도학습 분류/예측 모델 설계
+- Mixup, Label smoothing, Random Search 등 하이퍼 파라미터 최적화
+- Feature importance, SHAP 메소드를 활용한 모델 설명력 평가
+
+<br/>
+
 ### 6. Process
+
+<br/>
+
 ### 7. 참고자료
+
+<br/>
+
 ### 8. 증빙자료
